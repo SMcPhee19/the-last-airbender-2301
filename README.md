@@ -22,3 +22,6 @@ Ruby 3.1.1
 - `bundle install`
 - `rails db:{create,migrate}`
 - `rails s`
+
+
+- Start time: 5:36
