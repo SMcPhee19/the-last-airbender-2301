@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe AvatarService do
   it 'can consume the api and return the nation members' do
-    fire_nation = AvatarService.get_members('Fire')
+    fire_nation = AvatarService.new.get_members('Fire')
 
     expect(fire_nation).to be_a(Array)
     expect(fire_nation.count).to eq(111)

@@ -1,0 +1,17 @@
+<h1> <%= @name%> </h1>
+<br>
+<h2>Number of Members living in the <%= @name %>: <%= @members.count %></h2>
+<br>
+<h3>Members:</h3>
+<ul>
+  <% @members[0..24].each.with_index(1) do |member, i| %>
+    <div id="member-<%= i %>">
+      <li>Name: <%= member.name %></li>
+      <li>Photo: <%= member.photourl %></li>
+      <li>Allies: <%= member.allies %></li>
+      <li>Enemies: <%= member.enemies %></li>
+      <li>Affiliations: <%= member.affiliation %></li>
+      <br>
+    </div>
+  <% end %>
+  </ul>

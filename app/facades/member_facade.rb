@@ -1,6 +1,6 @@
 class MemberFacade
-  def self.members(nation)
-    members = AvatarService.get_members(nation).map do |member_data|
+  def members(nation)
+    members = AvatarService.new.get_members(nation).map do |member_data|
       Member.new(member_data)
     end
   end
